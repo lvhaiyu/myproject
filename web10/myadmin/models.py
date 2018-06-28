@@ -30,7 +30,7 @@ class  Goods(models.Model):
     descr = models.CharField(max_length=255,null=True)
     info = models.TextField(null=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    pic = models.CharField(max_length=100)
+    pics = models.CharField(max_length=100)
     # 0 新发布,1下架
     status = models.IntegerField(default=0)
     store = models.IntegerField(default=0)
